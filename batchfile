@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=neural_net
+#SBATCH --output=neural_net.out
+#SBATCH --error=neural_net.err
+#SBATCH --account=mpcs51087
+#SBATCH --partition=caslake
+#SBATCH --time=00:10:00
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=16
+
+./nn
